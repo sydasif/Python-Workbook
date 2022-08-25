@@ -1,27 +1,3 @@
-""" Task-1: A YouTube streamer decided to conduct a survey where users were asked to provide feedback on what they would like to watch in the
-next stream. Your job is to create a program that uses the following information and prints out the result of what the user chose, along with a
-thank you message. 
-
-What shall I stream next?
-
-a) Days Gone
-b) Resident Evil 2
-c) Fortnite
-d) Apex Legends
-e) Death Stranding
-f) Surprise Us!
-
-The ending message should be:
-
-You have chosen (option). I appreciate your time and hope to see you at the next one! """
-
-""" The exercise is fairly simple. Most of these will require you to print out information and then store the user-input value. Design the program so that it can understand what 'a' or 'b' or any character that the user chooses is, and then print the same out in the end greetings. You do not have to worry about printing out the name in the end. Just the letter of the selection will do for now."""
-
-""" Remember, the case-sensitive nature of the program still haunts us. Make use of methods like .lower() to ensure it matches our requirements. I will be providing my version of the program in the last chapter as a solution. For now, keep thinking, keep coding.
-
-Hint: While you can use an 'if' statement, I would recommend bypassing that for now. Try and think of more basic means to store and recall values.
-This can easily be done without the use of logic and if/else statements. We will revisit this exercise in the future to make it a little more complex and appealing at the same time. """
-
 print("What shall I stream next?")
 
 a = "Days Gone"

@@ -1,10 +1,3 @@
-""" You are making a ticketing system.
-The price of a single ticket is $100.
-For children under age of 03 year's, the ticket is free.
-Take five inputs from user asking age.
-Print out Total price, if having kids under age of 03 year's minus them.
-"""
-
 total = 0
 total_men = 0
 total_kids = 0
