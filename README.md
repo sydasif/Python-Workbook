@@ -18,6 +18,6 @@ Let's begin practice, practice and practice, thanks.
 
 ## Beginner Level
 
-- conduct a survey
-- making a ticketing system
-- faulty calculator
+- Task 01: Conduct a survey
+- Task 02: Making a ticketing system
+- Task 03: Faulty calculator
