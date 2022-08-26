@@ -12,6 +12,6 @@ practice does make a programmer perfect. In the beginning, you might have been s
 
 Once you gain the habit of writing codes daily, you will progress at a phenomenal rate and will be well on your way to becoming a full-fledged programmer within no time.
 
-[Check introduction of Python and your skill level](https://github.com/sydasif/Python-Workbook/blob/main/Intro_of_python.md)
+[Check the learning roadmap of Python and your skill level](https://github.com/sydasif/Python-Workbook/blob/main/Intro_of_python.md)
 
-Let's begin together, thanks.
+Let's begin practice, practice and practice, thanks.
