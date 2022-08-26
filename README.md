@@ -24,6 +24,6 @@ Let's begin practice, practice and practice, thanks.
 
 ## Intermediate Level
 
-- Task 01:
+- Task 01: Python function to find the maximum and minimum numbers
 - Task 02:
 - Task 03:
