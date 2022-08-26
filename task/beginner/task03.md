@@ -1,4 +1,4 @@
-# Exercise 2 - Faulty Calculator
+# Exercise 3 - Faulty Calculator
 
 1. Design a calculator which will correctly solve all the problems.
 
