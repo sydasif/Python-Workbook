@@ -15,3 +15,9 @@ Once you gain the habit of writing codes daily, you will progress at a phenomena
 [Check the learning roadmap of Python and your skill level](https://github.com/sydasif/Python-Workbook/blob/main/Intro_of_python.md)
 
 Let's begin practice, practice and practice, thanks.
+
+## Beginner Level
+
+- conduct a survey
+- making a ticketing system
+- faulty calculator
