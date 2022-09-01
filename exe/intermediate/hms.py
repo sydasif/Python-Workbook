@@ -8,56 +8,67 @@ def date_time():
 
 time_stamp = date_time()
 
-def name(person):
+def get_name(person):
     return person
 
 print("Well Come to Health Management System...")
-print("What do you want?")
 
-print("Read or Write a file?")
-print("Enter [0] for Read and [1] for Write.")
+while True:
 
-read_write = int(input('> '))
+    print("What do you want?")
 
-if read_write == 0:
-    print("What do you want to retrieve?")
-else:
-    print("What do you want to enter?")
+    print("Read or Write a file?")
+    print("Enter [0] for Read and [1] for Write.")
 
-print("Enter [0] for Food and [1] for Exercise.")
+    read_write = int(input('> '))
 
-food_or_exercise = int(input('> '))
-
-print("Please enter client name: ")
-print("'Harry', 'Rohan', 'Hammad'")
-
-clientName = input('> ').lower()
-
-name = name(clientName)
-
-if clientName == name and read_write == 0:
-    if food_or_exercise == 0:
-        f = open(f"{name}_food.txt")
-        print(f.read())
-        f.close()
+    if read_write == 0:
+        print("What do you want to retrieve?")
     else:
-        f = open(f"{name}_exe.txt")
-        print(f.read())
-        f.close()
-elif clientName == name and read_write == 1:
-    if  food_or_exercise == 0:
-        print("Enter food name: ")
-        food = input('> ')
-        f = open(f"{name}_food.txt", "a")
-        content = f"{food} {time_stamp}\n"
-        f.write(content)
-        f.close()
+        print("What do you want to enter?")
+
+    print("Enter [0] for Food and [1] for Exercise.")
+
+    food_or_exercise = int(input('> '))
+
+    print("Please enter client name: ")
+    print("'Harry', 'Rohan', 'Hammad'")
+
+    clientName = input('> ').lower()
+
+    name = get_name(clientName)
+
+    if clientName == name and read_write == 0:
+        if food_or_exercise == 0:
+            f = open(f"{name}_food.txt")
+            print(f.read())
+            f.close()
+        else:
+            f = open(f"{name}_exe.txt")
+            print(f.read())
+            f.close()
+    elif clientName == name and read_write == 1:
+        if  food_or_exercise == 0:
+            print("Enter food name: ")
+            food = input('> ')
+            f = open(f"{name}_food.txt", "a")
+            content = f"{food} {time_stamp}\n"
+            f.write(content)
+            f.close()
+        else:
+            print("Enter Exercise name: ")
+            exercise = input('> ')
+            f = open(f"{name}_exe.txt", "a")
+            content = f"{exercise} {time_stamp}\n"
+            f.write(content)
+            f.close()           
     else:
-        print("Enter Exercise name: ")
-        exercise = input('> ')
-        f = open(f"{name}_exe.txt", "a")
-        content = f"{exercise} {time_stamp}\n"
-        f.write(content)
-        f.close()           
-else:
-    print("Client does not exist...")
+        print("Client does not exist...")
+
+    print("Do you run again? [yes/no]")
+    
+    option = input('> ').lower()
+    if option != 'no':
+        continue
+    else:
+        break
