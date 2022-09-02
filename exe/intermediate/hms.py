@@ -1,15 +1,20 @@
 # Health Management System
 
+
 def date_time():
     from datetime import datetime
+
     now = datetime.now()
     date_time = now.strftime("%m/%d/%Y_%H:%M:%S")
     return date_time
 
+
 time_stamp = date_time()
+
 
 def get_name(person):
     return person
+
 
 print("Well Come to Health Management System...")
 
@@ -21,7 +26,7 @@ while True:
         print("Read or Write a file?")
         print("Enter [0] for Read and [1] for Write.")
 
-        read_write = int(input('> '))
+        read_write = int(input("> "))
 
         if read_write == 0:
             print("What do you want to retrieve?")
@@ -30,12 +35,12 @@ while True:
 
         print("Enter [0] for Food and [1] for Exercise.")
 
-        food_or_exercise = int(input('> '))
+        food_or_exercise = int(input("> "))
 
         print("Please enter client name: ")
         print("'Harry', 'Rohan', 'Hammad'")
 
-        clientName = input('> ').lower()
+        clientName = input("> ").lower()
 
         name = get_name(clientName)
 
@@ -49,29 +54,29 @@ while True:
                 print(f.read())
                 f.close()
         elif clientName == name and read_write == 1:
-            if  food_or_exercise == 0:
+            if food_or_exercise == 0:
                 print("Enter food name: ")
-                food = input('> ')
+                food = input("> ")
                 f = open(f"{name}_food.txt", "a")
                 content = f"{food} {time_stamp}\n"
                 f.write(content)
                 f.close()
             else:
                 print("Enter Exercise name: ")
-                exercise = input('> ')
+                exercise = input("> ")
                 f = open(f"{name}_exe.txt", "a")
                 content = f"{exercise} {time_stamp}\n"
                 f.write(content)
-                f.close()           
+                f.close()
         else:
             print("Client does not exist...")
     except ValueError:
         print("Invalid Input")
-            
+
     print("Do you run again? [yes/no]")
-    
-    option = input('> ').lower()
-    if option != 'no':
+
+    option = input("> ").lower()
+    if option != "no":
         continue
     else:
         break
