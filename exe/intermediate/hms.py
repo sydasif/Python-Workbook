@@ -1,7 +1,7 @@
 # Health Management System
 
 
-def date_time():
+def timeStamp():
     from datetime import datetime
 
     now = datetime.now()
@@ -9,7 +9,7 @@ def date_time():
     return date_time
 
 
-time_stamp = date_time()
+time_stamp = timeStamp()
 
 
 def get_name(person):
