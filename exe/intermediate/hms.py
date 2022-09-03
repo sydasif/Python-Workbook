@@ -12,8 +12,11 @@ def timeStamp():
 time_stamp = timeStamp()
 
 
-def get_name(person):
-    return person
+# def get_name(person):
+#     return person
+
+# we use labda to create same as above function
+get_name = lambda person: person
 
 
 print("Well Come to Health Management System...")
@@ -72,6 +75,8 @@ while True:
             print("Client does not exist...")
     except ValueError:
         print("Invalid Input")
+    except FileNotFoundError:
+        print("No such file or directory exsit...")
 
     print("Do you run again? [yes/no]")
 
