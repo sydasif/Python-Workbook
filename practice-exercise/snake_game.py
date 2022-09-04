@@ -2,48 +2,54 @@
 
 import random
 
-print("Well come, Snake, water and gun game.")
+print("Well come to Snake, water and gun game.")
 
-GAME_COUNT = 10
-COMP_WIN = 0
-USER_WIN = 0
+game_count = 10
 
-while GAME_COUNT != 0:
+comp_win = 0
 
-    computer_choice = random.choice(["snake", "water", "gun"])
+user_win = 0
+
+
+option = ["snake", "water", "gun"]
+
+while game_count != 0:
+    # comp_choice is computer
+    comp_choice = random.choice(option)
+    # user_choice is user
     user_choice = input("Your choice:- 'snake', 'water' or 'gun': ")
 
-    if computer_choice == user_choice:
-        print("Game Tie.")
-    elif computer_choice == "snake":
+    if comp_choice == user_choice:
+        print("Game is Tie.")
+    elif comp_choice == "snake":
         if user_choice == "water":
-            print("Computer Win.")
-            COMP_WIN += 1
+            print("Playe one win.")
+            comp_win += 1
         else:
-            print("User Win.")
-            USER_WIN += 1
-    elif computer_choice == "water":
+            print("User win..")
+            user_win += 1
+    elif comp_choice == "water":
         if user_choice == "gun":
-            print("Computer Win.")
-            COMP_WIN += 1
+            print("Computer win..")
+            comp_win += 1
         else:
-            print("User Win.")
-            USER_WIN += 1
-    elif computer_choice == "gun":
+            print("User win..")
+            user_win += 1
+    elif comp_choice == "gun":
         if user_choice == "snake":
-            print("Computer Win.")
-            COMP_WIN += 1
+            print("Computer win..")
+            comp_win += 1
         else:
-            print("User Win.")
-            USER_WIN += 1
+            print("User win..")
+            user_win += 1
     else:
         print("Invalid Input...")
 
-    GAME_COUNT -= 1
+    game_count -= 1
 
 print()
 
-if COMP_WIN > USER_WIN:
-    print("Computer Win: ", COMP_WIN)
+if comp_win > user_win:
+    print("Computer win.: ", comp_win)
 else:
-    print("User Win: ", USER_WIN)
+    print("User win.: ", user_win)
