@@ -5,11 +5,11 @@ Hint: use random module"""
 
 import random
 
-opt = ['rock', 'paper', 'scissors']
+opt = ["rock", "paper", "scissors"]
 
 while True:
     print("Your choice: 'Rock', 'Paper' or 'Scissors'")
-    player1 = input('> ').lower()
+    player1 = input("> ").lower()
     player2 = random.choice(opt)
 
     # Block no 1
@@ -17,23 +17,23 @@ while True:
         print(f"Player2: {player2} Game is Tie.")
 
     # Block no 2
-    elif player1 == 'rock':  
-        if player2 == 'scissors':
+    elif player1 == "rock":
+        if player2 == "scissors":
             print(f"Player2: {player2} You Win.")
         else:
             print(f"Player2: {player2} You lose.")
     # Block no 3
-    elif player1 == 'scissors':
-        if player2 == 'paper':
+    elif player1 == "scissors":
+        if player2 == "paper":
             print(f"Player2: {player2} You Win..")
         else:
-            print(f"Player2: {player2} You lose..")    
+            print(f"Player2: {player2} You lose..")
     # Block no 4
-    elif player1 == 'paper':
-        if player2 == 'rock':
+    elif player1 == "paper":
+        if player2 == "rock":
             print(f"Player2: {player2} You Win...")
         else:
-            print(f"Player2: {player2} You lose...")    
+            print(f"Player2: {player2} You lose...")
     else:
         print("Your choice is unknown...")
 
