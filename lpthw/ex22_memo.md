@@ -1,0 +1,31 @@
+# What Do You Know So Far?
+
+- print()       # Python function to print on screen
+- end=' '       # Removes new line in print function
+- ()            # Parenthesis
+- =             # Assignment operator
+- " "           # Double quote
+- ' '           # Single quote
+- f-string      # f-string to format string
+- {}            # Curly brace
+- '#'           # Comment
+- '+'           # Addition
+- '-'           # Subtraction
+- '*'           # Multiplication
+- %             # Modulo (reminder)
+- '>'           # Greater than
+- <             # Less than
+- '>='          # Greater than or equal
+- <=            # Less than or equal
+- /             # Division
+- str.format()  # String formatter
+- \n            # Add new line
+- \t            # Add tab
+- '\\'          # Add backspace
+- input()       # Take input from user
+- sys.argv      # Take argument from user
+- """ """       # Multi line comment with double quote
+- ''' '''       # Single line comment with single quote
+- open()        # Open files
+- def           # Define function with def keyword
+- return        # Return some value from function
